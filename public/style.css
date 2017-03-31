@@ -1,0 +1,248 @@
+body {
+	width: 100vw;
+	margin: 0px;
+}
+
+.banner-container {
+	width: 100%;
+	height: 100vh;
+	background-color: #266590;
+	background-image: url('file:///Users/macbookpro/Repos/founders-coders/public/images/BannerWide.png');
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+.banner-image {
+	position: relative;
+}
+
+.nav-container {
+	margin-top: 30px;
+	display: inline-block;
+	height: 60px;
+	width: 75%;
+	z-index: 10;
+	position: relative;
+}
+
+.logo-container {
+	float: left;
+	height: 60px;
+	width: 60px;
+}
+
+.logo {
+	height: 100%;
+	object-fit: contain;
+	color: white;
+	border-radius: 10px;
+}
+
+.brand-container {
+	float: left;
+	width: 400px;
+	display: inline-block;
+}
+
+.brand-container p {
+	color: white;
+	font-family: Montserrat;
+	margin: 2px;
+	text-align: left;
+}  
+
+.brand-text-container {
+	display: inline-block;
+	float: left;
+	margin-left: 20px;
+	font-size: 20px;
+	margin-top: 5px;
+}
+
+.nav {
+	float: right;
+}
+
+.nav-button {
+	display: inline-block;
+	line-height: 60px;
+	margin-left: 10px;
+	font-family: Montserrat;
+	color: white;
+}
+
+.banner-title-container {
+	margin-top: 50px;
+	font-family: 'Montserrat', 'sans-serif';
+	font-weight: bold;
+	color: white;
+}
+
+.banner-more-button {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 25px;
+	color: white;
+}
+
+.about-container {
+	width: 100%;
+	background-color: white;
+	text-align: center;
+	font-family: Montserrat;
+	padding-bottom: 20px;
+}
+
+.about-skills-container {
+	display: inline-block;
+	width: 90%;
+}
+
+.skill-container {
+	display:inline-block;
+	min-width: 150px;
+	width: 25%;
+	margin-top: 30px;
+}
+
+.skill-logo-container {
+	height: 120px;
+}
+
+.skill-logo {
+	height: 100%;
+	object-fit: contain
+}
+
+.skill-text {
+	width: 100%;
+	margin-top: -10px;
+}
+
+.skill-title {
+	height: 50px;
+	margin: 0px;
+	padding-top: 15px;
+}
+
+.work-container {
+	width: 100%;
+	background-color: #eee;
+	text-align: center;
+	font-family: Montserrat;
+	padding-bottom: 100px;
+}
+
+.work-header {
+	height: 90px;
+	padding-top: 10px;
+	margin-bottom: 60px;
+	font-size: 23px;
+}
+
+.work-entry {
+	width: 70%;
+	display: inline-block;
+	text-align: left;
+}
+
+
+.work-text-container {
+	float: left;
+	display: inline-block;
+	max-width: 40%;
+}
+
+.work-text-container-right {
+	display: inline-block;
+	position: absolute;
+	max-width: 30%;
+	margin-left: 30px;
+}
+
+.work-text-title {
+	font-weight: bold;
+	font-size: 35px	
+}
+
+.work-text-position {
+	font-style: italic;
+	color: #266590;
+	font-size: 15px;
+	margin: 3px;
+}
+
+.work-text-bullets {
+	font-size: 14px;
+	padding: 20px;
+	padding-top: 5px;
+	line-height: 20px
+}
+
+.work-text-bullets li {
+	padding-top: 10px
+}
+
+.work-image-container {
+	display: inline-block;
+	width: 60%;
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+.work-highlight {
+	width: 100%;
+	text-align: center;
+	font-size: 22px;
+	color: #266590;
+}
+
+.work-image-container-left {
+	display: inline-block;
+	text-align: left;
+}
+
+.work-separator {
+	width: 50%;
+	display: inline-block;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-color: #266590;
+	margin: 70px;
+}
+
+.atdaa-image {
+	height: 500px;
+	object-fit: contain;
+	margin-left: 20px;
+}
+
+.chromebook-image {
+	height: 350px;
+	object-fit: contain;
+}
+
+.labview-image {
+	height: 300px;
+	object-fit: contain;
+}
+
+.metaswitch-image {
+	height: 300px;
+	display: inline-block;
+	margin: 20px;
+	object-fit: contain;
+}
+
+.wireshark-image {
+	height: 100px;
+	display: block;
+	float: right;
+	margin: 20px;
+	object-fit: contain;
+}
+
