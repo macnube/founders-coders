@@ -62,7 +62,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	var banner = document.querySelector('.banner-container')
 	var brandText = document.querySelector('.brand-text-container')
 	var titleText = document.querySelector('.banner-title-container')
-	if (x < 980 && y < 700) {
+	var mobile =	navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/Android/i)
+	if (x < 980 && y < 700 || mobile) {
 		banner.style.backgroundImage = 'url(' + 'https://github.com/macnube/founders-coders/blob/master/public/images/BannerSimple.png?raw=true' + ')'
 		banner.style.backgroundPosition = 'center'
 		banner.style.backgroundSize = '250px 200px'
@@ -70,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		banner.style.backgroundImage = 'url(' + 'https://github.com/macnube/founders-coders/blob/master/public/images/BannerSimple.png?raw=true' + ')'
 		banner.style.backgroundPosition = 'center'
 	}
-	if (x < 950) {
+	if (x < 950 || mobile) {
 		makeSmall('.work-entry')
 		makeSmall('.work-text-container')
 		makeSmall('.work-text-container-right')
@@ -82,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		makeSmall('.about-image-container')
 		titleText.style.fontSize = '10px'
 		brandText.style.display = 'none'
-		if (x < 600) {
+		if (x < 600 || mobile) {
 			makeExtraSmall('.chromebook-image')
 			makeExtraSmall('.labview-image')
 			makeExtraSmall('.metaswitch-image')
