@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     y = w.innerHeight|| e.clientHeight|| g.clientHeight;
   console.log(x)
   console.log(y)
+  alert('This is width ' + x)
 	var skills = document.querySelector("#skills");
 	var work = document.querySelector("#work");
 	var about = document.querySelector("#about");
@@ -63,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	var brandText = document.querySelector('.brand-text-container')
 	var titleText = document.querySelector('.banner-title-container')
 	var mobile =	navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/Android/i)
-	console.log(mobile)
 	if ((x < 980 && y < 700) || mobile) {
 		banner.style.backgroundImage = 'url(' + 'https://github.com/macnube/founders-coders/blob/master/public/images/BannerSimple.png?raw=true' + ')'
 		banner.style.backgroundPosition = 'center'
