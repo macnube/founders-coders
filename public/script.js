@@ -63,7 +63,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	var brandText = document.querySelector('.brand-text-container')
 	var titleText = document.querySelector('.banner-title-container')
 	var mobile =	navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/Android/i)
-	if (x < 980 && y < 700 || mobile) {
+	console.log(mobile)
+	if ((x < 980 && y < 700) || mobile) {
 		banner.style.backgroundImage = 'url(' + 'https://github.com/macnube/founders-coders/blob/master/public/images/BannerSimple.png?raw=true' + ')'
 		banner.style.backgroundPosition = 'center'
 		banner.style.backgroundSize = '250px 200px'
