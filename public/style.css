@@ -43,7 +43,6 @@ body {
 
 .brand-container {
 	float: left;
-	width: 400px;
 	display: inline-block;
 }
 
@@ -176,6 +175,13 @@ body {
 	vertical-align: top;
 }
 
+.work-entry-small {
+	min-width: 100%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+}
+
 
 .work-text-container {
 	float: left;
@@ -184,9 +190,29 @@ body {
 	padding-left: 50px;
 }
 
+.work-text-container-small {
+	float: center;
+	display: inline-block;
+	width: 90%;
+}
+
 .work-text-container-right {
 	display: inline-block;
 	max-width: 400px;
+}
+
+.work-text-container-small ul {
+	text-align: left;
+}
+
+.work-text-container-right-small {
+	display: inline-block;
+	width: 90%;
+	float: center;
+}
+
+.work-text-container-right-small ul {
+	text-align: left;
 }
 
 .work-text-title {
@@ -219,6 +245,11 @@ body {
 	padding-right: 50px;
 }
 
+.work-image-container-small {
+	display: inline-block;
+	text-align: center;
+}
+
 .work-highlight {
 	max-width: 400px;
 	text-align: center;
@@ -226,11 +257,25 @@ body {
 	color: #266590;
 }
 
+.work-highlight-small {
+	width: 100%;
+	text-align: center;
+	font-size: 22px;
+	color: #266590;
+	margin-top: 20px;
+	margin-bottom: 20px
+}
+
 .work-image-container-left {
 	display: inline-block;
 	float: left;
 	margin-top: 40px;
 	margin-bottom: 20px;
+}
+
+.work-image-container-left-small {
+	display: inline-block;
+	text-align: center;
 }
 
 .work-separator {
@@ -248,10 +293,29 @@ body {
 	padding-right: 50px;
 }
 
+.atdaa-image-small {
+	height: 400px;
+	object-fit: contain;
+}
+
 .chromebook-image {
-	height: 300px;
+	width: 400px;
 	margin-right: 120px;
 	object-fit: contain;
+}
+
+.chromebook-image-small {
+	height: 300px;
+	object-fit: contain;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.chromebook-image-extra-small {
+	width: 350px;
+	object-fit: contain;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .labview-image {
@@ -260,11 +324,39 @@ body {
 	object-fit: contain;
 }
 
+.labview-image-small {
+	height: 230px;
+	object-fit: contain;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.labview-image-extra-small {
+	width: 350px;
+	object-fit: contain;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 .metaswitch-image {
 	height: 300px;
 	display: inline-block;
 	margin: 20px;
 	object-fit: contain;
+}
+
+.metaswitch-image-small {
+	height: 300px;
+	object-fit: contain;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.metaswitch-image-extra-small {
+	width: 350px;
+	object-fit: contain;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .about-container {
@@ -283,11 +375,22 @@ body {
 
 .about-image {
 	height: 300px;
-	border-radius: 10px;
 	border-style: solid;
 	border-color: #266590;
 	border-width: 4px;
 	float: left;
+}
+
+.about-image-container-small {
+	text-align: center
+}
+
+.about-image-small {
+	height: 300px;
+	border-style: solid;
+	border-color: #266590;
+	border-width: 4px;
+	display: inline-block;
 }
 
 .about-text-container {

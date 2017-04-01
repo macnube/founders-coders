@@ -21,6 +21,20 @@ function animate(elem, style, unit, from, to, time, prop) {
     }
 }
 
+function makeSmall (className) {
+	var elements = document.querySelectorAll(className)
+	elements.forEach( (ele) => {
+		ele.className += '-small'
+	})
+}
+
+function makeExtraSmall (className) {
+	var elements = document.querySelectorAll(className)
+	elements.forEach( (ele) => {
+		ele.className += '-extra-small'
+	})
+}
+
 document.addEventListener("DOMContentLoaded", function(event) { 
 	var w = window,
     d = document,
@@ -45,8 +59,40 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	document.querySelector('.banner-more-button').onclick = function() {
   	animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, skills.offsetTop, 300, true);
 	}
-	if (x < 980) {
-		document.querySelector('.banner-contaier').style.backgroundImage = 'url(' + 'https://github.com/macnube/founders-coders/blob/master/public/images/BannerSimple.png?raw=true' + ')'
+	var banner = document.querySelector('.banner-container')
+	var brandText = document.querySelector('.brand-text-container')
+	var titleText = document.querySelector('.banner-title-container')
+	if (x < 980 && y < 700) {
+		banner.style.backgroundImage = 'url(' + 'https://github.com/macnube/founders-coders/blob/master/public/images/BannerSimple.png?raw=true' + ')'
+		banner.style.backgroundPosition = 'center'
+		banner.style.backgroundSize = '250px 200px'
+	} else if (x < 980) {
+		banner.style.backgroundImage = 'url(' + 'https://github.com/macnube/founders-coders/blob/master/public/images/BannerSimple.png?raw=true' + ')'
+		banner.style.backgroundPosition = 'center'
 	}
+	if (x < 950) {
+		makeSmall('.work-entry')
+		makeSmall('.work-text-container')
+		makeSmall('.work-text-container-right')
+		makeSmall('.work-image-container')
+		makeSmall('.work-image-container-left')
+		makeSmall('.atdaa-image')
+		makeSmall('.work-highlight')
+		makeSmall('.about-image')
+		makeSmall('.about-image-container')
+		titleText.style.fontSize = '10px'
+		brandText.style.display = 'none'
+		if (x < 600) {
+			makeExtraSmall('.chromebook-image')
+			makeExtraSmall('.labview-image')
+			makeExtraSmall('.metaswitch-image')
+		} else {
+			makeSmall('.chromebook-image')
+			makeSmall('.labview-image')
+			makeSmall('.metaswitch-image')
+		}
+	}
+
 });
+
 
