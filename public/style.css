@@ -1,6 +1,8 @@
 body {
 	width: 100vw;
+	max-width: 100%;
 	margin: 0px;
+	scroll-behavior: smooth;
 }
 
 .banner-container {
@@ -69,8 +71,29 @@ body {
 	line-height: 60px;
 	margin-left: 10px;
 	font-family: Montserrat;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+}
+
+.nav-button a:link {
+	text-decoration: none;
 	color: white;
 }
+
+.nav-button a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+.nav-button a:hover {
+	color: #fed84e;
+}
+
+#skill-button:active ~ .nav-button {
+	transform: translateY(50%);
+}
+
 
 .banner-title-container {
 	margin-top: 50px;
@@ -81,12 +104,13 @@ body {
 
 .banner-more-button {
 	position: absolute;
-	bottom: 0px;
+	bottom: 60px;
 	width: 100%;
 	text-align: center;
 	font-family: Montserrat;
 	font-size: 25px;
 	color: white;
+	cursor: pointer;
 }
 
 .main-skills-container {
@@ -146,7 +170,7 @@ body {
 }
 
 .work-entry {
-	width: 70%;
+	min-width: 70%;
 	display: inline-block;
 	text-align: left;
 	vertical-align: top;
@@ -156,14 +180,13 @@ body {
 .work-text-container {
 	float: left;
 	display: inline-block;
-	width: 400px;
+	max-width: 400px;
 	padding-left: 50px;
 }
 
 .work-text-container-right {
 	display: inline-block;
-	width: 400px;
-	padding-left: 120px;
+	max-width: 400px;
 }
 
 .work-text-title {
@@ -197,7 +220,7 @@ body {
 }
 
 .work-highlight {
-	width: 100%;
+	max-width: 400px;
 	text-align: center;
 	font-size: 22px;
 	color: #266590;
@@ -227,11 +250,12 @@ body {
 
 .chromebook-image {
 	height: 300px;
+	margin-right: 120px;
 	object-fit: contain;
 }
 
 .labview-image {
-	height: 200px;
+	height: 230px;
 	margin-right: 50px;
 	object-fit: contain;
 }
@@ -253,7 +277,8 @@ body {
 
 .about {
 	display: inline-block;
-	width: 60%
+	width: 75%;
+	text-align: left;
 }
 
 .about-image {
@@ -263,4 +288,11 @@ body {
 	border-color: #266590;
 	border-width: 4px;
 	float: left;
+}
+
+.about-text-container {
+	display: inline-block;
+	max-width: 800px;
+	min-width: 300px;
+	padding-left: 30px;
 }
