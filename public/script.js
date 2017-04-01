@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     y = w.innerHeight|| e.clientHeight|| g.clientHeight;
   console.log(x)
   console.log(y)
-  alert('This is width ' + x)
+  document.title = x
 	var skills = document.querySelector("#skills");
 	var work = document.querySelector("#work");
 	var about = document.querySelector("#about");
