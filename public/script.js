@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	if ((x < 980 && y < 700) || mobile) {
 		banner.style.backgroundImage = 'url(' + 'https://github.com/macnube/founders-coders/blob/master/public/images/BannerSimple.png?raw=true' + ')'
 		banner.style.backgroundPosition = 'center'
-		banner.style.backgroundSize = '250px 200px'
+		banner.style.backgroundSize = '200px 160px'
 	} else if (x < 980) {
 		banner.style.backgroundImage = 'url(' + 'https://github.com/macnube/founders-coders/blob/master/public/images/BannerSimple.png?raw=true' + ')'
 		banner.style.backgroundPosition = 'center'
@@ -82,7 +82,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		makeSmall('.work-highlight')
 		makeSmall('.about-image')
 		makeSmall('.about-image-container')
-		titleText.style.fontSize = '10px'
+		makeSmall('.nav-container')
+		makeSmall('.banner-more-button')
+		makeSmall('.about-text-container')
+		titleText.style.fontSize = '8px'
 		brandText.style.display = 'none'
 		if (x < 600 || mobile) {
 			makeExtraSmall('.chromebook-image')

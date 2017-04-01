@@ -28,10 +28,25 @@ body {
 	position: relative;
 }
 
+.nav-container-small {
+	margin-top: 30px;
+	display: inline-block;
+	height: 60px;
+	width: 95%;
+	z-index: 10;
+	position: relative;	
+}
+
 .logo-container {
 	float: left;
 	height: 60px;
 	width: 60px;
+}
+
+.logo-container-small {
+	float: left;
+	height: 40px;
+	width: 40px;
 }
 
 .logo {
@@ -108,6 +123,17 @@ body {
 	text-align: center;
 	font-family: Montserrat;
 	font-size: 25px;
+	color: white;
+	cursor: pointer;
+}
+
+.banner-more-button-small {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 15px;
 	color: white;
 	cursor: pointer;
 }
@@ -398,4 +424,10 @@ body {
 	max-width: 800px;
 	min-width: 300px;
 	padding-left: 30px;
+}
+
+.about-text-container-small {
+	display: inline-block;
+	width: 100%;
+	padding: 10px;
 }
