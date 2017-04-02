@@ -42,9 +42,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     g = d.getElementsByTagName('body')[0],
     x = w.innerWidth || e.clientWidth || g.clientWidth,
     y = w.innerHeight|| e.clientHeight|| g.clientHeight;
-  console.log(x)
-  console.log(y)
-  document.title = x
 	var skills = document.querySelector("#skills");
 	var work = document.querySelector("#work");
 	var about = document.querySelector("#about");
@@ -85,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		makeSmall('.nav-container')
 		makeSmall('.banner-more-button')
 		makeSmall('.about-text-container')
+		makeSmall('.skill-container')
 		titleText.style.fontSize = '8px'
 		brandText.style.display = 'none'
 		if (x < 600 || mobile) {
