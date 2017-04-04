@@ -146,6 +146,20 @@ body {
 	padding-bottom: 20px;
 }
 
+.main-skills-container a:link {
+	text-decoration: none;
+	color: #266590;
+}
+
+.main-skills-container a:visited {
+	text-decoration: none;
+	color: #266590;
+}
+
+.main-skills-container a:hover {
+	color: #fed84e;
+}
+
 .skills-container {
 	display: inline-block;
 	width: 90%;
@@ -180,6 +194,8 @@ body {
 	min-height: 200px;
 	margin-top: -10px;
 }
+
+
 
 .skill-title {
 	height: 50px;
@@ -321,15 +337,53 @@ body {
 	margin: 70px;
 }
 
-.atdaa-image {
+.work-image-action {
+	position: absolute;
+	margin-left: 110px;
+}
+
+.work-image-action-small {
+	position: absolute;
+	margin-left: -65px;
+}
+
+.atdaa-phone {
 	height: 400px;
-	object-fit: contain;
+	width: 300px;
+	display: inline-block;
+	background-image: url('https://github.com/macnube/founders-coders/blob/master/public/images/AtdaaMap.png?raw=true');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 	padding-right: 50px;
+	cursor: pointer;
+}
+
+.atdaa-image {
+	position: absolute;
+	width: 172px;
+	margin-left: 90px;
+	margin-top: 46px;
+	z-index: 5;
+}
+
+.atdaa-phone-small {
+	height: 400px;
+	width: 300px;
+	display: inline-block;
+	background-image: url('https://github.com/macnube/founders-coders/blob/master/public/images/AtdaaMap.png?raw=true');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	cursor: pointer;
 }
 
 .atdaa-image-small {
-	height: 400px;
-	object-fit: contain;
+	position: absolute;
+	width: 172px;
+	margin-left: -85px;
+	margin-top: 46px;
+	z-index: 5;
 }
 
 .chromebook-image {
