@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
 	<title>Paul McCloud</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 	<link href="public/style.css" rel="stylesheet">
@@ -64,7 +64,7 @@
 				</div>
 				<h2 class='skill-title'>Mobile Development</h2>
 				<div class='skill-text-container'>
-					<p>Rapid mobile development for both Android and iOS using React-Native. Read more about how I engineered an application from idea to MVP in 4 months with Atdaa.</p>
+					<p>Rapid mobile development for both Android and iOS using React-Native. <a href='#atdaa' id='atdaa-scroll'>Read more</a> about how I engineered an application from idea to MVP in 4 months with Atdaa.</p>
 				</div>
 			</div>
 			<div class='skill-container'>
@@ -73,7 +73,7 @@
 				</div>
 				<h2 class='skill-title'>Fast Troubleshooting</h2>
 				<div class='skill-text-container'>
-					<p>With my extensive experience at Google, Metaswitch and National Instruments I know how to quicky identify and fix issues so that your customers remain loyal.</p>
+					<p>With my extensive experience at <a href='#google' id='google-scroll'>Google</a>, <a href='#metaswitch' id='metaswitch-scroll'>Metaswitch</a> and <a href='#ni' id='ni-scroll'>National Instruments</a> I know how to quicky identify and fix issues so that your customers remain loyal.</p>
 				</div>
 			</div>
 			<div class='skill-container'>
@@ -110,7 +110,7 @@
 			<h1>My Work</h1>
 		</div>
 		<div class='work-entry'>
-			<div class='work-text-container'>
+			<div class='work-text-container' id='atdaa'>
 				<span class='work-text-title'>Atdaa</span>
 				<p class='work-text-position'>Co-founder & React-Native Developer</p>
 				<ul class='work-text-bullets'>
@@ -123,11 +123,14 @@
 				</div>
 			</div>
 			<div class='work-image-container'>
-				<img src='./public/images/AtdaaMap.png' class='atdaa-image'>
+				<div src='./public/images/iPhoneEmpty.png' class='atdaa-phone'>
+					<img src='./public/images/MapPOICard.png' class='atdaa-image' />
+				</div>
+				<span class='work-image-action'> Click to see more</span>
 			</div>
 		</div>
 		<div class='work-separator'></div>
-		<div class='work-entry'>
+		<div class='work-entry' id='google'>
 			<div class='work-image-container-left'>
 				<img src='./public/images/Chromebook.png' class='chromebook-image'>
 			</div>
@@ -145,7 +148,7 @@
 			</div>
 		</div>
 		<div class='work-separator'></div>
-		<div class='work-entry'>
+		<div class='work-entry' id='metaswitch'>
 			<div class='work-text-container'>
 				<span class='work-text-title'>Metaswitch Networks</span>
 				<p class='work-text-position'>Customer Support Engineer</p>
@@ -163,7 +166,7 @@
 			</div>
 		</div>
 		<div class='work-separator'></div>
-		<div class='work-entry'>
+		<div class='work-entry' id='ni'>
 			<div class='work-image-container-left'>
 				<img src='./public/images/Labview.png' class='labview-image'>
 			</div>
@@ -190,10 +193,10 @@
 				<img src='./public/images/profile.png' class='about-image'/>
 			</div>
 			<div class='about-text-container'>
-				<p>I'm a professional builder and problem solver. Starting with my Mechanical Engineering degree at the University of Texas at Austin, I learned the best ways to break down a problem and approach it systematically. Those troubleshooting skills were honed in the support and application engineer roles that I had at Google, National Instruments and Metaswitch Networks. However, in 2015 I realized I wasn't happy with the limited direction of my career as only a problem solver and desparately missed the building things. So I quit my job at Google, went sailing in the Carribbean for months with a friend and traveled South America to think of my next move.</p>
-				<p>At the beginning of 2016, fatigued from travel and eager to sink my teeth into some long-term projects, I moved to Buenos Aires and began to teach myself Javascript while practicing my Spanish, teaching English, and taking dance classes! Programming was addictive and filled my desire to build and create. 6 months after I had written my first Hello World progrfam in javascript, I met whom would eventually be the other cofounders of Atdaa, a UX designer from Turkey and a UI designer from Argentina.</p>
-				<p>As the sole engineer on the project, I was tasked with learning React Native so that we could take our Atdaa from idea to MVP. In only 4 months, I was able to architect and build our MVP iOS application using React Native. This accomplishment demonstrates what I consider to be my most valuable skills: work ethic and ability to learn quickly.</p>
-				<p>When I'm not programming, I have many other hobbies (probably too many) that keep me healthy and happy. I love bike riding, hiking and camping, dancing to house and swing music, ultimate frisbee, making really good coffee and latte art, and cooking delicious vegetarian food!</p>
+				<p>I'm a professional builder and problem solver. Starting with my Mechanical Engineering degree at the University of Texas at Austin, I learned the best ways to break down a problem and approach it systematically. Those troubleshooting skills were honed in the support and application engineering roles that I had at Google, National Instruments and Metaswitch Networks. However, in 2015 I realized I wasn't happy with the limited direction of my career as only a problem solver and desparately missed the building things. So I quit my job at Google, went sailing in the Carribbean for months with a friend and traveled South America to think of my next move.</p>
+				<p>At the beginning of 2016, fatigued from travel and eager to sink my teeth into some long-term projects, I moved to Buenos Aires and began to teach myself Javascript while practicing my Spanish, teaching English, and taking dance classes! Programming was addictive and filled my desire to build and create. 6 months after I had written my first Hello World progrfam in javascript, I met the people whom would eventually be the other cofounders of Atdaa, a UX designer from Turkey and a UI designer from Argentina.</p>
+				<p>As the sole engineer on the project, I was tasked with learning React Native so that we could take Atdaa from idea to MVP. In only 4 months, I was able to architect and build our MVP iOS application using React Native. This accomplishment demonstrates what I consider to be my most valuable skills: work ethic and ability to learn quickly.</p>
+				<p>When I'm not programming, I have many other hobbies (probably too many) that keep me healthy and happy. I love bike riding, hiking and camping, dancing, ultimate frisbee, making really good coffee and latte art, and cooking delicious vegetarian food!</p>
 			</div>
 		</div>
 	</div>
